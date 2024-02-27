@@ -47,3 +47,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	router();
 });
+
+document.addEventListener()
