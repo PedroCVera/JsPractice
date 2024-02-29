@@ -7,21 +7,21 @@
 	<style>
 		div#area1{
 			font: normal 20pt Arial;
+			text-align: center;
 			background: rgb(42, 139, 42);
 			color: white;
 			width: 2000px;
 			height: 450px;
 			line-height: 200px;
-			text-align: center;
 		}
 		div#area2{
 			font: normal 20pt Arial;
+			text-align: center;
 			background: rgb(139, 42, 42);
 			color: white;
 			width: 2000px;
 			height: 450px;
 			line-height: 200px;
-			text-align: center;
 		}
 	</style>
 </head>
@@ -41,11 +41,15 @@
 		function outNo()
 		{
 			window.document.getElementById('area2').innerText = "No!";
+			window.document.getElementById('area2').style.font = "normal 20pt Arial";
+			window.document.getElementById('area2').style.textAlign = "center";
 		}
 		function overNo()
 		{
-			window.document.getElementById('area2').innerText = "Yes Please!";
-			window.document.getElementById('area2').style.font: normal 50pt Arial;
+			let area2 = window.document.getElementById('area2');
+			area2.innerText = "Yes Please!";
+			area2.style.font = "normal 50pt Arial";
+			area2.style.textAlign = "center";
 		}
 
 		function clickouYes()
