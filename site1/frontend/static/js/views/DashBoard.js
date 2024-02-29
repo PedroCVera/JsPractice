@@ -15,7 +15,13 @@ export default class extends Aview {
 				This is the dashboard!
 			</p>
 			<p>
-			<b><a href="/posts" data-link>View recent posts</a>.</b>
+				<b><a href="/posts" data-link>View recent posts</a>.</b>
+			</p>
+			<h2>
+				Or play the game:
+			</h2>
+			<p>
+				<b><a href="/game" data-link>Game!</a></b>
 			</p>
 		`;
 	}

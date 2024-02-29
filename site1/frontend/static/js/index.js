@@ -1,6 +1,7 @@
 import DashBoard from "./views/DashBoard.js";
 import Posts from "./views/Posts.js";
 import Settings from "./views/Settings.js";
+import Game from "./views/Game.js";
 
 const navigateTo = url => 
 {
@@ -12,7 +13,8 @@ const router = async () => {
     const routes = [
         { path: "/", view: DashBoard },
 		{ path: "/posts", view: Posts },
-		{ path: "/settings", view: Settings }
+		{ path: "/settings", view: Settings },
+		{ path: "/game", view:Game}
     ];
 
 	//test each route for pontential match
