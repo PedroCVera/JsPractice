@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Eventos</title>
+	<style>
+		/* div#area1{
+			font: normal 20pt Arial;
+			text-align: center;
+			background: rgb(42, 139, 42);
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		}
+		div#area2{
+			font: normal 20pt Arial;
+			text-align: center;
+			background: rgb(139, 42, 42);
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		} */
+
+		.buttonDefault{
+			font: normal 20pt Arial;
+			text-align: center;
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		}
+
+		div#area2:hover{
+			background: green;
+			font: normal 50pt Arial;
+		}
+
+		.red {
+			color: red;
+		}
+		.green {
+			color: green;
+		}
+		.redBG {
+			background: red;
+		}
+		.greenBG {
+			background: green;
+		}
+		.blue {
+			color: blue;
+		}
+		.headerClass{
+			color: black;
+			font: normal 40pt Arial;
+		}
+
+	</style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="/" class="nav__link SelectRed" data-link>Home</a>
+        <a href="/posts" class="nav__link SelectRed" data-link>Posts</a>
+        <a href="/settings" class="nav__link SelectRed" data-link>Settings</a>
+        <a href="/game" class="nav__link SelectRed" data-link>Game</a>
+    </nav>
+    <div id="app"></div>
+    <script type="module">
+        fetch('path/to/ThisIsTheTrueIndex.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load HTML file');
+                }
+                return response.text();
+            })
+            .then(htmlContent => {
+                document.body.innerHTML = htmlContent;
+            })
+            .catch(error => console.error('Error loading HTML file:', error));
+    </script>
+    <script type="module" src="../static/js/index.js"></script>
+</body>
+</html>
