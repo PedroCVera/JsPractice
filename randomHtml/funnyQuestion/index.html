@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Eventos</title>
+	<style>
+		/* div#area1{
+			font: normal 20pt Arial;
+			text-align: center;
+			background: rgb(42, 139, 42);
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		}
+		div#area2{
+			font: normal 20pt Arial;
+			text-align: center;
+			background: rgb(139, 42, 42);
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		} */
+
+		.buttonDefault{
+			font: normal 20pt Arial;
+			text-align: center;
+			color: white;
+			width: 2000px;
+			height: 450px;
+			line-height: 300px;
+		}
+
+		div#area2:hover{
+			background: green;
+			font: normal 50pt Arial;
+		}
+
+		.red {
+			color: red;
+		}
+		.green {
+			color: green;
+		}
+		.redBG {
+			background: red;
+		}
+		.greenBG {
+			background: green;
+		}
+		.blue {
+			color: blue;
+		}
+		.headerClass{
+			color: black;
+			font: normal 40pt Arial;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>
+			<b>Wanna get kidnapped?</b>
+		</h1>
+	</div>
+	<div class="area1 greenBG buttonDefault" onclick="clickouYes()">
+		Yes
+	</div>
+	<div class="area2 redBG buttonDefault" onmouseenter="overNo()" onclick="clickouNo()" onmouseout="outNo()">
+		No!
+	</div>
+	<div class="teste"><h1>Teste</h1></div>
+	
+
+	<script>
+		function outNo()
+		{
+			// window.document.getElementById(".area2").style.textAlign = "down";
+			window.document.querySelector(".area2").innerText = "No!";
+		// 	window.document.getElementById('area2').style.font = "normal 20pt Arial";
+		// 	window.document.getElementById('area2').style.lineHeight = "300px";
+		}
+		function overNo()
+		{
+			let area2 = window.document.querySelector(".area2");
+			area2.innerText = "Yes Please!";
+			// area2.style.font = "normal 50pt Arial";
+			//area2.style.textAlign = "center";
+		}
+
+		function clickouYes()
+		{
+			window.alert('Get out.')
+		}
+		function clickouNo()
+		{
+			window.alert('You got it ;)')
+		}
+		document.querySelector(".teste").classList.add("red");
+		document.querySelector(".header").classList.add("headerClass");
+
+
+	</script>
+</body>

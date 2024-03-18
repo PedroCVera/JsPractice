@@ -15,7 +15,7 @@ export default class extends Aview {
 				Let's read some posts!
 			</p>
 			<p>
-			<b><a href="/" data-link>Home</a>.</b>
+			<b><a href="/" data-link>Home.</a></b>
 			</p>
 		`;
 	}

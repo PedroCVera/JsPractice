@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progressive Color Fill</title>
+<style>
+  /* Define the base styles for the text */
+  .fill-text {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    overflow: hidden; /* Ensures the background color won't overflow */
+    /* background-image: linear-gradient(to right, red, yellow); Background color for fill */
+	/* background-size: 0%; */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    color: black; /* Make text transparent */
+    /* animation: color-fill 4s forwards; /* Apply the animation */
+	animation: colorfillStart 500s backwards;
+  }
+
+  .fill-text:hover{
+	color: transparent;
+	animation: color-fill 500ms forwards; /* Apply the animation */
+  }
+  /* Define the animation */
+  @keyframes color-fill {
+    from {
+      background-size: 0% 100%; /* Start with no fill */
+	  background-color: black;
+    }
+    to {
+      background-size: 100% 100%; /* End with full fill */
+	  background-color:red;
+    }
+  }
+</style>
+</head>
+<body>
+
+<p>Hover over the text to see the progressive color fill effect:</p>
+<span class="fill-text">Hover over me!</span>
+
+</body>
+</html>
+

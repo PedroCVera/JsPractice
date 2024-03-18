@@ -15,7 +15,7 @@ export default class extends Aview {
 				This is the dashboard!
 			</p>
 			<p>
-				<b><a href="/posts" data-link>View recent posts</a>.</b>
+				<b><a href="/posts" data-link>View recent posts.</a></b>
 			</p>
 			<h2>
 				Or play the game:

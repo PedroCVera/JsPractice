@@ -23,7 +23,7 @@ body {
 }
 
 .nav__link:hover {
-	background: rgba(255, 255, 255, 0.05);
+	animation: nav_link_select 500ms forwards;
 }
 
 #app {
@@ -33,5 +33,16 @@ body {
 }
 
 a {
-	color: #009579;
+	color: #b90000;
+}
+
+@keyframes nav_link_select {
+	from{
+		color: white;
+		padding: 12px 18px;
+	}
+	to{
+		color: red;
+		padding: 12px 25px;
+	}
 }
