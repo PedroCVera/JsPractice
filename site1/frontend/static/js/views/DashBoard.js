@@ -1,13 +1,13 @@
 import Aview from "./Aview.js";
 
 export default class extends Aview {
-	constructor()
+	constructor(params)
 	{
-		super();
+		super(params);
 		this.setTitle("Home");
 	}
 
-	async getHtml() 
+	async getHtml()
 	{
 		return `
 			<h1>Welcome to the DashBoard!</h1>

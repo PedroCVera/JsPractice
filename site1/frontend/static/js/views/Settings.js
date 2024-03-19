@@ -1,9 +1,9 @@
 import Aview from "./Aview.js";
 
 export default class extends Aview {
-	constructor()
+	constructor(params)
 	{
-		super();
+		super(params);
 		this.setTitle("Settings");
 	}
 
